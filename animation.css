@@ -108,10 +108,10 @@
 /* 11 esercizio */
 
 .ex-11-icon:hover{
-    animation: spin 1s linear infinite;
+    animation: secondspin 1s linear infinite;
 }
 
-@keyframes spin{
+@keyframes secondspin{
     0%{     
         transform: rotate(0);
     }
@@ -122,5 +122,45 @@
     
     100%{     
         transform: rotate(0);
+    }
 }
+
+/* 12 esercizio */
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: movewhitetop 2s linear;
 }
+
+@keyframes movewhitetop{
+    0%{     
+        left: 10%;
+    }
+
+    50%{     
+        left:calc(100% - 60px);
+    }
+    
+    100%{     
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: movewhitebottom 2s linear;
+}
+
+@keyframes movewhitebottom{
+    0%{     
+        right:10%;
+    }
+
+    50%{     
+        right: calc(100% - 60px);
+    }
+    
+    100%{     
+        right: 10%;
+    }
+}
+
+
