@@ -45,15 +45,82 @@
 }
 
 .ex-5-square:hover{
-    height: 100px;
-    width: 100px;
+    transform: scale(2);
 }
 
 .ex-5-square:active{
-    height: 15px;
-    width: 15px;
+    transform:scale(0.5);
 }
 
 
 /* 6 esercizio */
 
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+
+/* 7 esercizio */
+
+.ex-7-img:hover{
+    transition: 3s;
+}
+
+.ex-7-img:hover{
+    filter: grayscale(1);
+}
+
+/* 8 esercizio */
+
+.ex-8-img{
+    transition: 1s;
+}
+
+.ex-8-img:hover{
+    border-radius: 20px;
+    filter: grayscale(50%) sepia(100%);;
+}
+
+/* 9 esercizio */
+
+.ex-9-img{
+    transition: 2s;
+}
+
+.ex-9-img:hover{
+    transform: scale(1.5);
+    border-radius: 20px;
+    filter: grayscale(50%) sepia(100%);;
+}
+
+/* 10 esercizio */
+
+.ex-10-icon{
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        
+        transform: rotate(360deg);
+    }
+}
+
+/* 11 esercizio */
+
+.ex-11-icon:hover{
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0%{     
+        transform: rotate(0);
+    }
+
+    80%{     
+        transform: rotate(300deg);
+    }
+    
+    100%{     
+        transform: rotate(0);
+}
+}
